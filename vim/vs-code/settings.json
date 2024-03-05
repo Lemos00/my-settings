@@ -14,7 +14,9 @@
     // switch between windows
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
-    { "before": ["<C-g>"], "commands": ["editor.action.goToImplementation"] }
+    { "before": ["<C-g>"], "commands": ["editor.action.goToImplementation"] },
+    { "before": ["<C-l>"], "commands": ["cursorWordRight"] },
+    { "before": ["<C-h>"], "commands": ["cursorWordLeft"] }
   ],
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
