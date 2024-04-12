@@ -1,0 +1,24 @@
+// Place your key bindings in this file to override the defaults
+[
+  // file tree navigation
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus"
+  }
+]

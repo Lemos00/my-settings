@@ -16,42 +16,18 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
     { "before": ["<C-g>"], "commands": ["editor.action.goToImplementation"] },
     { "before": ["<C-l>"], "commands": ["cursorWordRight"] },
-    { "before": ["<C-h>"], "commands": ["cursorWordLeft"] }
-  ],
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "editor.detectIndentation": false,
-  "code-runner.runInTerminal": true,
-  "editor.fontFamily": "Cascadia Code",
-  "workbench.iconTheme": "material-icon-theme",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "remote.SSH.remotePlatform": {
-    "cs4459-vm1.gaul.csd.uwo.ca": "linux",
-    "compute.gaul.csd.uwo.ca": "linux"
-  },
-  "editor.codeLensFontFamily": "Cascadia Code",
-  "workbench.colorTheme": "Eva Dark Bold",
-  "C_Cpp.errorSquiggles": "enabled",
-  "C_Cpp.default.cStandard": "c99",
-  "C_Cpp.default.compilerPath": "",
-  "C_Cpp.default.customConfigurationVariables": {},
-  "editor.fastScrollSensitivity": 1,
-  "terminal.integrated.fastScrollSensitivity": 1,
-  "workbench.list.fastScrollSensitivity": 1,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.exclude": {
-    "**/.git": false
-  },
-  "editor.minimap.enabled": false
+    { "before": ["<C-h>"], "commands": ["cursorWordLeft"] },
+
+    // file tree commands
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+
+    // open code portion
+    {
+      "before": ["shift", "c"],
+      "commands": ["workbench.action.focusActiveEditorGroup"]
+    }
+  ]
 }
